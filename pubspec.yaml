@@ -1,0 +1,44 @@
+name: bloc_lesson_1
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  # for state management
+  flutter_bloc: ^8.0.1
+
+  # for testing
+  test: ^1.15.2
+  bloc_test: ^9.0.3
+
+  # for checking equal Objects
+  equatable: ^2.0.3
+
+  #for checking internet connection
+  connectivity_plus: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  # assets:
+  #   - images/a_dot_burr.jpeg
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
