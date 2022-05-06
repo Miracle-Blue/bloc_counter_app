@@ -4,15 +4,16 @@ import 'package:bloc_lesson_1/domain/cubit/settings_cubit.dart';
 import 'package:bloc_lesson_1/presentation/router/route_generator.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'presentation/utils/theme.dart';
 
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(
-      const SystemUiOverlayStyle(statusBarColor: Colors.red)
-  );
+
+  // SystemChrome.setSystemUIOverlayStyle(
+  //     const SystemUiOverlayStyle(statusBarColor: Colors.red)
+  // );
+
   runApp(
     MyApp(
       route: RouteGenerator(),
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
         title: 'BloC App 1',
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
-        themeMode: ThemeMode.light,
+        themeMode: ThemeMode.system,
         onGenerateRoute: route.generateRoute,
       ),
     );
