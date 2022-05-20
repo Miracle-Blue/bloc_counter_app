@@ -5,3 +5,4 @@ BloC project:
     - SnackBar
     - Generated Routing
     - Internet connection checking
+    - Test's
